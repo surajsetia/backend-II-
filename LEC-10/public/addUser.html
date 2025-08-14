@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-color: #e979e1;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        form {
+            margin: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input {
+            margin-bottom: 10px;
+            padding: 8px;
+            width: 200px;
+        }
+        button {
+            padding: 8px 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add Users</h1>
+    <form action="/addusers" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <button type="submit">Add User</button>
+    </form>
+    <a href="index.html">Back to Home</a>
+</body>
+</html>
