@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Blog APP</div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="./allblog">AllBlog</a></li>
+                <li><a href="./myblog">MyBlog</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main>
+        <div class="signup">
+            <form action="" id="signup-form" method="POST">
+                <input type="text" name="username" placeholder="Username" id="username">
+                <input type="email" name="email" placeholder="Email" id="email" required>
+                <input type="password" name="password" placeholder="Password" id="password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+
+        <div class="login">
+            <form action="" id="login-form">
+                <input type="email" name="email" placeholder="Email" id="login-email" required>
+                <input type="password" name="password" placeholder="Password" id="login-password" required>
+                <button type="submit">Log In</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+<script src="./index.js"></script>
+</html>
